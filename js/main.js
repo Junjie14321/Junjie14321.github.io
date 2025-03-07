@@ -95,32 +95,9 @@
 
   // Owl Carousel
   var owlCarouselFeatureSlide = function () {
-    var owl = $(".owl-carousel1");
-    owl.owlCarousel({
-      animateOut: "fadeOut",
-      animateIn: "fadeIn",
-      autoplay: true,
-      loop: true,
-      margin: 0,
-      nav: true,
-      dots: false,
-      autoHeight: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 2,
-        },
-        1000: {
-          items: 3,
-        },
-      },
-      navText: [
-        "<i class='icon-arrow-left3 owl-direction'></i>",
-        "<i class='icon-arrow-right3 owl-direction'></i>",
-      ],
-    });
+    
+
+    
     var owl2 = $(".owl-carousel");
     owl2.owlCarousel({
       animateOut: "fadeOut",
@@ -134,7 +111,7 @@
       items: 1,
       navText: [
         "<i class='icon-arrow-left3 owl-direction'></i>",
-        "<i class='icon-arrow-right3 owl-direction'></i>",
+        "<i class='icon-arrow-right3 owl-direction'></i>"
       ],
     });
     // About Me Section (Autoplay Enabled)
@@ -150,22 +127,50 @@ owl3.owlCarousel({
     autoHeight: false, // <-- DISABLE autoHeight to prevent jumping
     items: 1
 });
-var owlWork = $('.owl-carousel-work');
-owlWork.owlCarousel({
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    autoplay: false,  // No auto sliding to prevent unexpected changes
-    loop: true,
-    margin: 10,
-    nav: true,  // Enable manual navigation
-    dots: false,
-    autoHeight: false, // Prevents content height from shifting
-    items: 1,
-    navText: [
+
+
+var owl = $(".owl-carousel1");
+    owl.owlCarousel({
+      animateOut: "fadeOut",
+      animateIn: "fadeIn",
+      autoplay: true,
+      loop: true,
+      margin: 0,
+      dots: true,
+      autoHeight: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+      },
+      navText: [
         "<i class='icon-arrow-left3 owl-direction'></i>",
         "<i class='icon-arrow-right3 owl-direction'></i>"
-    ]
-});
+      ],
+    });
+// var owlProjects = $('.owl-carousel-projects');
+// owlProjects.owlCarousel({
+//     animateOut: 'fadeOut',
+//     animateIn: 'fadeIn',
+//     autoplay: false,  // No auto-sliding for better control
+//     loop: true,
+//     margin: 10,
+//     nav: true,  // Enable Next/Prev buttons
+//     dots: false,
+//     autoHeight: false, // Prevents content height from shifting
+//     items: 1,
+//     navText: [
+//         "<i class='bi bi-arrow-left'></i>",
+//         "<i class='bi bi-arrow-right'></i>"
+//     ]
+// });
+
 
   };
 
